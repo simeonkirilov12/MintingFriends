@@ -20,7 +20,8 @@ p{
 .second__section .container,
 .third__section .container,
 .forth__section .container,
-.fifth__section .container {
+.fifth__section .container,
+.six__section .container {
   justify-content: center;
   align-items: center;
   flex: 1;
@@ -32,7 +33,7 @@ p{
   justify-content: center;
   align-items: center;
   flex: 1;
-  display: flex;
+  display: block;
   height: 100%;
   padding-top: 64px;
 }
@@ -295,12 +296,14 @@ footer{
 
 /* Forth Section */
 .forth__section,
-.fifth__section {
+.fifth__section,
+.six__section {
   background-color: #010606;
 }
 
 .forth__section h2,
-.fifth__section h2 {
+.fifth__section h2,
+.six__section h2 {
   font-size: 48px !important;
   font-weight: 700;
   color: white;
@@ -320,6 +323,27 @@ footer{
 }
 
 .fifth__section ul li{
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.six__section p{
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.six__section ul{
+  padding-left: 0px;
+  list-style: none;
+  margin-top: 1.5rem;
+  margin-bottom: 0px;
+}
+
+.six__section ul li{
   color: white;
   font-size: 26px;
   font-weight: 600;
@@ -364,14 +388,16 @@ footer{
   .second__section .container,
   .third__section .container,
   .forth__section .container,
-  .fifth__section .container{
+  .fifth__section .container,
+  .six__section .container {
     align-items: normal !important;
   }
 
   .second__section,
   .third__section,
   .forth__section,
-  .fifth__section {
+  .fifth__section,
+  .six__section {
     height: auto !important;
     padding: 20% 0;
   }
@@ -389,6 +415,14 @@ footer{
   }
 
   .fifth__section ul li{
+    font-size: 18px !important;
+  }
+
+  .six__section .text{
+    font-size: 20px;
+  }
+
+  .six__section ul li{
     font-size: 18px !important;
   }
 }

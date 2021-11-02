@@ -33,7 +33,6 @@ const StyledPadding = styled.div`
   padding-bottom: 8px;
 `
 const StyledCard = styled(Card)`
-  width: 60%;
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   box-shadow: rgb(0 152 161) 0px 0px 0px 1px, rgb(31 199 212 / 40%) 0px 0px 4px 8px;
   border-radius: 24px;
@@ -42,7 +41,11 @@ const StyledCard = styled(Card)`
   font-size: 24px;
   height: fit-content;
   padding-top: 64px;
+  margin: auto;
   
+`
+const StyledWrapper = styled.div`
+  text-align: left;
 `
 
 const App = () => {
@@ -51,6 +54,7 @@ const App = () => {
   const [method, setMethod] = useState(null);
   const [account, setAccount] = useState(null);
   const [contract, setContract] = useState(null);
+  const [owner, setOwner] = useState(null);
   const [totalSupply, setTotalSupply] = useState(0);
   const [maxSupply, setMaxSupply] = useState(0);
   const [price, setPrice] = useState(0);
@@ -93,6 +97,9 @@ const App = () => {
     // method && fireToast()
 
     // if (chainId === 1) {
+    const owner = await contract.methods.owner().call();
+    setOwner(owner);
+
     const totalSupply = await contract.methods.totalSupply().call();
     setTotalSupply(totalSupply);
     
@@ -191,6 +198,66 @@ const App = () => {
     }
   }
 
+  async function pauseMint() {
+    if (contract) {
+      if( account == owner) {
+        try {
+          await contract.methods
+            .pause(true)
+            .send({ from: account });
+        } catch (error) {
+          if (error.code === 4001) {
+            swal("Transaction Rejected!", "", "error");
+          } else {
+            swal("Transaction Failed!", "", "error");
+          }
+        }
+      } else {
+        swal(
+          "",
+          "Contract owner can control pause or resume minting",
+          "error"
+        );
+      }
+    } else {
+      swal(
+        "",
+        "Please install an Ethereum-compatible browser or extension like MetaMask to use this dApp!",
+        "error"
+      );
+    }
+  }
+
+  async function resumeMint() {
+    if (contract) {
+      if(account == owner) {
+        try {
+          await contract.methods
+            .pause(false)
+            .send({ from: account });
+        } catch (error) {
+          if (error.code === 4001) {
+            swal("Transaction Rejected!", "", "error");
+          } else {
+            swal("Transaction Failed!", "", "error");
+          }
+        }
+      } else {
+        swal(
+          "",
+          "Contract owner can control pause or resume minting",
+          "error"
+        );
+      }
+    } else {
+      swal(
+        "",
+        "Please install an Ethereum-compatible browser or extension like MetaMask to use this dApp!",
+        "error"
+      );
+    }
+  }
+
   function handleMinus() {
     // let newNum = 1
     // if(mintNum >= 2)
@@ -224,13 +291,20 @@ const App = () => {
         <div className='container'>
           {/* <div className='row text-center'> */}
             {/* <div className='col-md-9 m-auto'> */}
+              {/* <h1>
+                Mint Sup Bird NFT
+              </h1> */}
+              <div>
+                <Button variant='primary' onClick={() =>pauseMint()}>Pause Minting</Button>
+                <Button variant='primary' onClick={() =>resumeMint()}>Resume Minting</Button>
+              </div>
               <StyledCard className='mintCard'>
                 <h1>{totalSupply}/{maxSupply}</h1>
                 <p className='sub__heading'>
                   {contractAddress.slice(0, 7) + '...' + contractAddress.slice(contractAddress.length - 4)}
                 </p>
                 <p className='sub__heading'>
-                  1 RIZK costs {price / 10**18 } ETH
+                  1 SupBird costs {price / 10**18 } ETH
                 </p>
                 <p className='sub__heading'>
                   Click buy to mint your NFT
@@ -243,7 +317,7 @@ const App = () => {
                 <StyledPadding />
                 {/* {account? <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a RIZK</Button> : 
                 <Button variant='primary' id='connectButton' onClick={connectMetaMask}>Connect Wallet</Button>} */}
-                <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a RIZK</Button>
+                <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
               </StyledCard>
             {/* </div> */}
           {/* </div> */}
@@ -255,12 +329,14 @@ const App = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 content'>
-              <h2>About the RIZK</h2>
+              <h2>About the SupBird</h2>
               <p className='content'>
-                RIZK are 10,000 professional RIZK
-                competing on the blockchain for supremacy. 
+              SupBirds are 5000 unique bird characters which live on Ethereum Blockchain. 
+              Each Sup Bird comes with proof of ownership, represented by the ERC721 standard. 
+              The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
+              Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
               </p>
-              <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a RIZK</Button>
+              <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
             </div>
             <div className='col-md-6 video'>
               <tokenSlider />
@@ -287,19 +363,21 @@ const App = () => {
             </Col>
             <Col md={7}>
               <h2>Rarity</h2>
+              <StyledWrapper>
               <ul>
-                <li>0.08 Eth</li>
-                <li>2.5% royalty</li>
-                <li>No bonding curve</li>
-                <li>ERC-721</li>
-                <li>IPFS stored</li>
+                <li>🐔 Heads 10</li>
+                <li>👀 Eyes 10</li>
+                <li>🖥Background 10</li>
+                <li>👕Clothes 10 </li>
+                <li>🍗Fur 10</li>
               </ul>
-              <p>
+              </StyledWrapper>
+              {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse porta cursus turpis, vel accumsan massa accumsan ut.
                 Donec rhoncus tempus rutrum.
-              </p>
-              <Button variant='primary'>Mint a RIZK</Button>
+              </p> */}
+              <Button variant='primary'>Mint a SupBird</Button>
             </Col>
           </Row>
         </Container>
@@ -356,20 +434,52 @@ const App = () => {
               <h2>The Roadmap</h2>
               {/* <Roadmap /> */}
               <div className='mt-5'>
-                <p className='text'>PRESALE</p>
-                <p className='text'>
+                {/* <p className='text'>PRESALE</p> */}
+                {/* <p className='text'>
                   The buyers of the first 500 RIZK will participate in
                   an AirDrop of 10 RIZK (so cap)
-                </p>
+                </p> */}
+                <StyledWrapper>
                 <ul>
-                  <li>10% - Your RIZK writes The Alien Note.</li>
-                  <li>20% - A random number of RIZK joins the Metaverse.</li>
-                  <li>40% - A random number of RIZK joins the Metaverse.</li>
-                  <li>Featuring Limited Edition tees, hoodies, sunglasses and more.</li>
-                  <li>80% - The Mothership becomes interactive and The Alien Notes are revealed.</li>
-                  <li>100% - The Mothership is fixed. Should use we leave Earth or not? You'll decide.</li>
+                  <li>10% - Auto generating and Revealing all SupBirds </li>
+                  <li>20% - Releasing 1 ETH as design competition </li>
+                  <li>30% - Listing all Birds on Rarity.tools and Discord Server Boosting </li>
+                  <li>40% - Launching SupBird Branded online store.  </li>
+                  <li>50% - Massive Marketing and PR campaigns </li>
+                  <li>60% - Giveaway the first ever minted SupBird  </li>
+                  <li>70% - Dropping Second Unique Collection where each SupBird owner will be able to claim Free NFT  </li>
+                  <li>80% - Releasing the Sup Grand as a Future Development ETH Fund. This will bring extra utility to SupBirds ecosystem   </li>
+                  <li>100% - Purchasing Real Estate Property on a tiny island. Everyone will be invited! </li>
+                  <li>? - Big Surprise </li>
                 </ul>
+                </StyledWrapper>
+                <p className='text'>
+                *More information on our roadmap please join our Discord Channel
+                </p>
               </div>
+            </Col>
+          </Row>
+        </Container>
+      </Slide>
+
+      <Slide className='six__section' id='royalty'>
+        <Container>
+          <Row>
+            <Col md={12}>
+              <h2>The Royalties</h2>
+                <div className='mt-5'>
+                  <StyledWrapper>
+                    <p>
+                    In order to provide a long term strategy and project growth, SupBirds will have royalty fees from all secondary market sales. 
+                    The fees will be split and allocated as follow:
+                    </p>
+                    <ul>
+                      <li>30% Buybacks, giveaways and future development.  </li>
+                      <li>20% Supporting other projects and airdropping to Sup Bird Holders as monthly giveaways.  </li>
+                      <li>20% For Partnerships and support of other projects </li>
+                    </ul>
+                  </StyledWrapper>
+                </div>
             </Col>
           </Row>
         </Container>
