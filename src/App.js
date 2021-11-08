@@ -331,7 +331,7 @@ const App = () => {
               <h2>About the SupBirds</h2>
               <p className='content' id="supbirds">
               SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
-              Each Sup Bird comes with proof of ownership, represented by the ERC721 standard and it is the <a href="https://cronos.crypto.org/explorer/tokens/0x48879b93AbCE2B69F9792584f8891BCe30C1BF28/token-transfers">First NFT Collection on Cronos Network</a> implemented on <a href=""https://cronos.crypto.org/explorer/blocks/5169">Block #5169</a> from cronos.Crypto.org
+              Each Sup Bird comes with proof of ownership, represented by the ERC721 standard and it is the <a href="https://cronos.crypto.org/explorer/tokens/0x48879b93AbCE2B69F9792584f8891BCe30C1BF28/token-transfers">First NFT Collection on Cronos Network</a> implemented on Block 5169 from cronos.Crypto.org
               The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
               Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
               </p>
