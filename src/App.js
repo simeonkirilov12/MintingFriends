@@ -303,7 +303,7 @@ const App = () => {
                 </p> */}
 
                 <p className='sub__heading'>
-                  1 SupBird costs {price / 10**18 } ETH
+                  1 SupBird costs 100 CRO
                 </p>
                 <p className='sub__heading'>
                   Mint your SupBird
