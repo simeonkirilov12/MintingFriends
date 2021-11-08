@@ -299,9 +299,9 @@ const App = () => {
                 <h1>{totalSupply}/{maxSupply}</h1>
 
 
-                <p className='sub__heading'>
+                <h4>
                   {contractAddress}
-                </p>
+                </h4>
                
                 {/* <p className='sub__heading'>
                   {contractAddress.slice(0, 7) + '...' + contractAddress.slice(contractAddress.length - 4)}
@@ -332,7 +332,7 @@ const App = () => {
       <Slide className='second__section' id='rizk'>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-1 content'>
+            <div className='col-md-5 content'>
               <h2>About the SupBirds</h2>
               <p className='content' id="supbirds">
               SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
