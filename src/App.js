@@ -329,7 +329,7 @@ const App = () => {
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 content'>
-              <h2>About the SupBird</h2>
+              <h2>About the SupBirds</h2>
               <p className='content'>
               SupBirds are 5000 unique bird characters which live on Ethereum Blockchain. 
               Each Sup Bird comes with proof of ownership, represented by the ERC721 standard. 
@@ -364,6 +364,31 @@ const App = () => {
             <Col md={7}>
               <h2>Rarity</h2>
               <StyledWrapper>
+              
+              <table class="blueTable">
+                <thead>
+                <tr>
+                <th>head1</th>
+                <th>head2</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>cell1_1</td><td>cell2_1</td></tr>
+                <tr>
+                <td>cell1_2</td><td>cell2_2</td></tr>
+                <tr>
+                <td>cell1_3</td><td>cell2_3</td></tr>
+                <tr>
+                <td>cell1_4</td><td>cell2_4</td></tr>
+                <tr>
+                <td>cell1_5</td><td>cell2_5</td></tr>
+                </tbody>
+                </tr>
+                </table>
+
+          
+              
               <ul>
                 <li>🐔 Heads 10</li>
                 <li>👀 Eyes 10</li>
@@ -371,6 +396,9 @@ const App = () => {
                 <li>👕Clothes 10 </li>
                 <li>🍗Fur 10</li>
               </ul>
+
+
+
               </StyledWrapper>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -402,26 +430,7 @@ const App = () => {
               <Image src={line3} fluid className='mb-5' />
               <h3>Basi</h3>
             </Col>
-            <Col md={3}>
-              <Image src={line4} fluid className='mb-5' />
-              <h3>Nodo</h3>
-            </Col>
-            <Col md={3}>
-              <Image src={line5} fluid className='mb-5' />
-              <h3>Mimi</h3>
-            </Col>
-            <Col md={3}>
-              <Image src={line6} fluid className='mb-5' />
-              <h3>Sava</h3>
-            </Col>
-            <Col md={3}>
-              <Image src={line7} fluid className='mb-5' />
-              <h3>Peto</h3>
-            </Col>
-            <Col md={3}>
-              <Image src={line8} fluid className='mb-5' />
-              <h3>Qiya</h3>
-            </Col>
+            
           </Row>
         </Container>
       </Slide>
