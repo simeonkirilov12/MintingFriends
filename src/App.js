@@ -299,7 +299,7 @@ const App = () => {
                 <h1>{totalSupply}/{maxSupply}</h1>
 
 
-                <p>
+                <p className='sub__heading'>
                   {contractAddress}
                 </p>
 
@@ -350,9 +350,10 @@ const App = () => {
                       The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
                       Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
                       </p>
-                  <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
+                  
                   </StyledWrapper>
                 </div>
+               <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
             </Col>
           </Row>
         </Container>
