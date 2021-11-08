@@ -1,32 +1,23 @@
 /**
- *Submitted for verification at Etherscan.io on 2021-10-22
-*/
-
-/**
  *
+**
+*    ███████╗██╗   ██╗██████╗     ██████╗ ██╗██████╗ ██████╗ ███████╗
+*    ██╔════╝██║   ██║██╔══██╗    ██╔══██╗██║██╔══██╗██╔══██╗██╔════╝
+*    ███████╗██║   ██║██████╔╝    ██████╔╝██║██████╔╝██║  ██║███████╗
+*    ╚════██║██║   ██║██╔═══╝     ██╔══██╗██║██╔══██╗██║  ██║╚════██║
+*    ███████║╚██████╔╝██║         ██████╔╝██║██║  ██║██████╔╝███████║
+*    ╚══════╝ ╚═════╝ ╚═╝         ╚═════╝ ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝
+*                                                                
  *
+ * 5,000 Sup Birds are gonna fly to the MetaVersa
  *
- *    /$$$$$$$$         /$$            /$$$$$$                            /$$$$$$$                      /$$                   /$$            /$$$$$$
- *   | $$_____/        | $$           /$$__  $$                          | $$__  $$                    | $$                  | $$           /$$__  $$
- *   | $$    /$$$$$$  /$$$$$$        | $$  \ $$  /$$$$$$   /$$$$$$       | $$  \ $$  /$$$$$$   /$$$$$$$| $$   /$$  /$$$$$$  /$$$$$$        | $$  \__/  /$$$$$$   /$$$$$$  /$$  /$$  /$$
- *   | $$$$$|____  $$|_  $$_/        | $$$$$$$$ /$$__  $$ /$$__  $$      | $$$$$$$/ /$$__  $$ /$$_____/| $$  /$$/ /$$__  $$|_  $$_/        | $$       /$$__  $$ /$$__  $$| $$ | $$ | $$
- *   | $$__/ /$$$$$$$  | $$          | $$__  $$| $$  \ $$| $$$$$$$$      | $$__  $$| $$  \ $$| $$      | $$$$$$/ | $$$$$$$$  | $$          | $$      | $$  \__/| $$$$$$$$| $$ | $$ | $$
- *   | $$   /$$__  $$  | $$ /$$      | $$  | $$| $$  | $$| $$_____/      | $$  \ $$| $$  | $$| $$      | $$_  $$ | $$_____/  | $$ /$$      | $$    $$| $$      | $$_____/| $$ | $$ | $$
- *   | $$  |  $$$$$$$  |  $$$$/      | $$  | $$| $$$$$$$/|  $$$$$$$      | $$  | $$|  $$$$$$/|  $$$$$$$| $$ \  $$|  $$$$$$$  |  $$$$/      |  $$$$$$/| $$      |  $$$$$$$|  $$$$$/$$$$/
- *   |__/   \_______/   \___/        |__/  |__/| $$____/  \_______/      |__/  |__/ \______/  \_______/|__/  \__/ \_______/   \___/         \______/ |__/       \_______/ \_____/\___/
- *                                             | $$
- *                                             | $$
- *
- *
- * 10,000 Fat Apes are flying through the Metaverse.
- *
- * Become a Fat Ape Crew and on board the Rocket
+ * Become a Sup Birds owner 
  *
  * Next Destination -> To The Moon
  *
- * Let's Pump it Up
+ * Mint your Sup Bird and Become a Part of The Best Community Driven Project 
  *
- *  More on https://fataperocketcrew.com
+ * More on https://supbirds.com
  *
 */
 
@@ -1257,13 +1248,13 @@ abstract contract Ownable is Context {
 }
 
 
-contract FatApes is ERC721Enumerable, Ownable {
+contract SupBirds is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string public baseURI;
   string public baseExtension = ".json";
-  uint256 public cost = 0.000 ether;
-  uint256 public maxSupply = 50;
+  uint256 public cost = 0.08 ether;
+  uint256 public maxSupply = 5000;
   uint256 public maxMintAmount = 50;
   bool public paused = false;
   mapping(address => bool) public whitelisted;
@@ -1276,7 +1267,7 @@ contract FatApes is ERC721Enumerable, Ownable {
      
     setBaseURI(_initBaseURI);
    
-    mint(msg.sender, 50);
+    mint(msg.sender, 20);
   }
 
   // internal
@@ -1367,3 +1358,19 @@ contract FatApes is ERC721Enumerable, Ownable {
     require(payable(msg.sender).send(address(this).balance));
   }
 }
+
+
+
+
+/**
+*     ██████  █    ██  ██▓███      ▄▄▄▄    ██▓ ██▀███  ▓█████▄   ██████ 
+*   ▒██    ▒  ██  ▓██▒▓██░  ██▒   ▓█████▄ ▓██▒▓██ ▒ ██▒▒██▀ ██▌▒██    ▒ 
+*   ░ ▓██▄   ▓██  ▒██░▓██░ ██▓▒   ▒██▒ ▄██▒██▒▓██ ░▄█ ▒░██   █▌░ ▓██▄   
+*     ▒   ██▒▓▓█  ░██░▒██▄█▓▒ ▒   ▒██░█▀  ░██░▒██▀▀█▄  ░▓█▄   ▌  ▒   ██▒
+*   ▒██████▒▒▒▒█████▓ ▒██▒ ░  ░   ░▓█  ▀█▓░██░░██▓ ▒██▒░▒████▓ ▒██████▒▒
+*   ▒ ▒▓▒ ▒ ░░▒▓▒ ▒ ▒ ▒▓▒░ ░  ░   ░▒▓███▀▒░▓  ░ ▒▓ ░▒▓░ ▒▒▓  ▒ ▒ ▒▓▒ ▒ ░
+*   ░ ░▒  ░ ░░░▒░ ░ ░ ░▒ ░        ▒░▒   ░  ▒ ░  ░▒ ░ ▒░ ░ ▒  ▒ ░ ░▒  ░ ░
+*   ░  ░  ░   ░░░ ░ ░ ░░           ░    ░  ▒ ░  ░░   ░  ░ ░  ░ ░  ░  ░  
+*     ░     ░                  ░       ░     ░        ░          ░  
+*  ░               ░               
+*/
