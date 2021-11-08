@@ -62,7 +62,7 @@ const App = () => {
   const [balance, setBalance] = useState(0);
   const [tokens, setTokens] = useState([]);
   let [mintNum, setMintNum] = useState(1);
-  const api = "https://supbirds.com/meta/";
+  const api = "https://wwww.supbirds.com/meta/";
 
   useEffect(async () => {
     loadWeb3();
@@ -170,7 +170,7 @@ const App = () => {
       // console.log('debug->contract', contract)
       // if (chainId === 1) {
       if (mintCount === 0) {
-        swal("Minimum mint amount is 1 PetPal", "", "info");
+        swal("Minimum mint amount is 1 SupBirds", "", "info");
       } else {
         try {
           const finalPrice = Number(price) * mintCount;
@@ -393,7 +393,7 @@ const App = () => {
         <Container>
           <Row className='text-center'>
             <Col md={12} className='mb-5'>
-              <h1>Line Up</h1>
+              <h2>Line Up</h2>
             </Col>
             <Col md={3}>
               <Image src={line1} fluid className='mb-5' />
