@@ -399,70 +399,10 @@ const App = () => {
           </Row>
         </Container>
       </Slide>
-{/*
-      {/* Section 5 */}
-      <Slide className='fifth__section' id='roadmap'>
-        <Container>
-          <Row>
-            <Col md={12}>
-              <h2>Roadmap</h2>
-              {/* <Roadmap /> */}
-              <div className='mt-5'>
-                {/* <p className='text'>PRESALE</p> */}
-                {/* <p className='text'>
-                  The buyers of the first 500 RIZK will participate in
-                  an AirDrop of 10 RIZK (so cap)
-                </p> */}
-                <StyledWrapper>
-                <ul>
-                  <li>10% - Auto generating and Revealing all SupBirds </li>
-                  <li>20% - Listing all Birds on Rarity.tools and Rarity Sniper  </li>
-                  <li>30% - Releasing 1 ETH as design competition</li>
-                  <li>40% - Launching SupBird Branded online store.  </li>
-                  <li>50% - Massive Marketing and PR campaigns </li>
-                  <li>60% - Giveaway the first ever minted SupBird  </li>
-                  <li>70% - Dropping Second Unique Collection where each SupBird owner will be able to claim Free NFT  </li>
-                  <li>80% - Releasing the Sup Grand as a Future Development ETH Fund. This will bring extra utility to SupBirds ecosystem   </li>
-                  <li>100% - Purchasing Real Estate Property on a tiny island. Everyone will be invited! </li>
-                  <li>? - Big Surprise </li>
-                </ul>
-                </StyledWrapper>
-                <p className='text'>
-                *More information on our roadmap please join our <a href="https://discord.gg/akCERrFYD3">Discord NFT Channel</a>
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </Slide>
 
-      <Slide className='six__section' id='royalty'>
-        <Container>
-          <Row>
-            <Col md={12}>
-              <h2>The Royalties</h2>
-                <div className='mt-5'>
-                  <StyledWrapper>
-                    <p>
-                    In order to provide a long term strategy and project growth, SupBirds will have royalty fees from all secondary market sales. 
-                    The fees will be split and allocated as follow:
-                    </p>
-                    <ul>
-                      <li>30% Buybacks, giveaways and future development.  </li>
-                      <li>20% Supporting other projects and airdropping to Sup Bird Holders as monthly giveaways.  </li>
-                      <li>20% For Partnerships and support of other projects </li>
-                    </ul>
-                  </StyledWrapper>
-                </div>
-            </Col>
-          </Row>
-        </Container>
-      </Slide>
 
-      <Footer />
     </FullPage>
   )
 }
-*/}
 
 export default App
