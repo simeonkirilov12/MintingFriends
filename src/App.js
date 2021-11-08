@@ -296,15 +296,17 @@ const App = () => {
               </h1> */}
         
               <StyledCard className='mintCard'>
-                <h2>{totalSupply}/{maxSupply}</h2>
-                <p className='sub__heading'>
+                <h1>{totalSupply}/{maxSupply}</h1>
+               
+                {/* <p className='sub__heading'>
                   {contractAddress.slice(0, 7) + '...' + contractAddress.slice(contractAddress.length - 4)}
-                </p>
+                </p> */}
+
                 <p className='sub__heading'>
                   1 SupBird costs {price / 10**18 } ETH
                 </p>
                 <p className='sub__heading'>
-                  Click buy to mint your NFT
+                  Mint your SupBird
                 </p>
                 <div class="qty mt-1">
                   <span class="minus bg-dark" onClick={() => handleMinus()}>-</span>
@@ -403,7 +405,7 @@ const App = () => {
         <Container>
           <Row>
             <Col md={12}>
-              <h2>The Roadmap</h2>
+              <h2>Roadmap</h2>
               {/* <Roadmap /> */}
               <div className='mt-5'>
                 {/* <p className='text'>PRESALE</p> */}
@@ -414,8 +416,8 @@ const App = () => {
                 <StyledWrapper>
                 <ul>
                   <li>10% - Auto generating and Revealing all SupBirds </li>
-                  <li>20% - Releasing 1 ETH as design competition </li>
-                  <li>30% - Listing all Birds on Rarity.tools and Discord Server Boosting </li>
+                  <li>20% - Listing all Birds on Rarity.tools and Rarity Sniper  </li>
+                  <li>30% - Releasing 1 ETH as design competition</li>
                   <li>40% - Launching SupBird Branded online store.  </li>
                   <li>50% - Massive Marketing and PR campaigns </li>
                   <li>60% - Giveaway the first ever minted SupBird  </li>
@@ -426,7 +428,7 @@ const App = () => {
                 </ul>
                 </StyledWrapper>
                 <p className='text'>
-                *More information on our roadmap please join our Discord Channel
+                *More information on our roadmap please join our <a href="https://discord.gg/akCERrFYD3">Discord NFT Channel</a>
                 </p>
               </div>
             </Col>
