@@ -360,11 +360,12 @@ const App = () => {
               
               
               <ul>
-                <li>🐔 Heads 10</li>
-                <li>👀 Eyes 10</li>
-                <li>🖥Background 10</li>
-                <li>👕Clothes 10 </li>
-                <li>🍗Fur 10</li>
+                <li>🐔 Headwear 15</li>
+                <li>👀 Eyes 12</li>
+                <li>🖥 Background 10</li>
+                <li>👄 Mouth 11 </li>
+                <li>👕 Clothes 12 </li>
+                <li>🍗 Body 11</li>
               </ul>
 
 
