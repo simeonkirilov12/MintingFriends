@@ -334,28 +334,29 @@ const App = () => {
 
       {/* Section 2 */}
       <Slide className='second__section' id='rizk'>
-        <div className='container'>
-          <div className='row'>
-            
-             <Col md={7}>
-               
-              <h2>About the SupBirds</h2>
-              <p className='content' id="supbirds">
-              SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
-              Each Sup Bird comes with proof of ownership, represented by the ERC721 standard and it is the <a href="https://cronos.crypto.org/explorer/tokens/0x48879b93AbCE2B69F9792584f8891BCe30C1BF28/token-transfers">First NFT Collection on Cronos Network</a> implemented on Block 5169 from cronos.Crypto.org
-              The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
-              Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
-              </p>
-              <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
-          
-              </Col>
-
-            <div className='col-md-5 content'>
-     
-            </div>
-          
-          </div>
-        </div>
+        
+        
+        
+        
+        <Container>
+          <Row>
+            <Col md={12}>
+              <h2>About SupBirds</h2>
+                <div className='mt-5'>
+                  <StyledWrapper>
+                      <p className='content' id="supbirds">
+                      SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
+                      Each Sup Bird comes with proof of ownership, represented by the ERC721 standard and it is the <a href="https://cronos.crypto.org/explorer/tokens/0x48879b93AbCE2B69F9792584f8891BCe30C1BF28/token-transfers">First NFT Collection on Cronos Network</a> implemented on Block 5169 from cronos.Crypto.org
+                      The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
+                      Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
+                      </p>
+                  <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
+                  </StyledWrapper>
+                </div>
+            </Col>
+          </Row>
+        </Container>
+  
       </Slide>
 
       {/* Section 3 */}
