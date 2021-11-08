@@ -299,9 +299,9 @@ const App = () => {
                 <h1>{totalSupply}/{maxSupply}</h1>
 
 
-                <h4>
+                <p>
                   {contractAddress}
-                </h4>
+                </p>
                
                 {/* <p className='sub__heading'>
                   {contractAddress.slice(0, 7) + '...' + contractAddress.slice(contractAddress.length - 4)}
@@ -332,7 +332,7 @@ const App = () => {
       <Slide className='second__section' id='rizk'>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-5 content'>
+            
               <h2>About the SupBirds</h2>
               <p className='content' id="supbirds">
               SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
@@ -341,6 +341,10 @@ const App = () => {
               Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
               </p>
               <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
+          
+
+            <div className='col-md-5 content'>
+     
             </div>
           
           </div>
