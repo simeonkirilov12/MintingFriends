@@ -292,14 +292,11 @@ const App = () => {
           {/* <div className='row text-center'> */}
             {/* <div className='col-md-9 m-auto'> */}
               {/* <h1>
-                Mint Sup Bird NFT
+                 SupBirds NFT
               </h1> */}
-              <div>
-                <Button variant='primary' onClick={() =>pauseMint()}>Pause Minting</Button>
-                <Button variant='primary' onClick={() =>resumeMint()}>Resume Minting</Button>
-              </div>
+        
               <StyledCard className='mintCard'>
-                <h1>{totalSupply}/{maxSupply}</h1>
+                <h2>{totalSupply}/{maxSupply}</h2>
                 <p className='sub__heading'>
                   {contractAddress.slice(0, 7) + '...' + contractAddress.slice(contractAddress.length - 4)}
                 </p>
@@ -330,7 +327,7 @@ const App = () => {
           <div className='row'>
             <div className='col-md-6 content'>
               <h2>About the SupBirds</h2>
-              <p className='content'>
+              <p className='content' id="supbirds">
               SupBirds are 5000 unique bird characters which live on Ethereum Blockchain. 
               Each Sup Bird comes with proof of ownership, represented by the ERC721 standard. 
               The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
@@ -338,18 +335,7 @@ const App = () => {
               </p>
               <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
             </div>
-            <div className='col-md-6 video'>
-              <tokenSlider />
-              {/* <ReactPlayer
-                url={sectionVideo}
-                controls={false}
-                playing={true}
-                muted={true}
-                loop={true}
-                width='auto'
-                style={{ textAlign: 'center' }}
-              /> */}
-            </div>
+          
           </div>
         </div>
       </Slide>
@@ -393,11 +379,11 @@ const App = () => {
         <Container>
           <Row className='text-center'>
             <Col md={12} className='mb-5'>
-              <h2>Line Up</h2>
+              <h2>Team</h2>
             </Col>
             <Col md={3}>
               <Image src={line1} fluid className='mb-5' />
-              <h3>Halo</h3>
+              <h3>Simeon Kirilov</h3>
             </Col>
             <Col md={3}>
               <Image src={line2} fluid className='mb-5' />
