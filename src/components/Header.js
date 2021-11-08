@@ -152,9 +152,8 @@ const Header = () => {
               <Nav.Link href='#home'> Home </Nav.Link>
               <Nav.Link href='#rizk'> The SupBirds </Nav.Link>
               <Nav.Link href='#distribution'>Rarity</Nav.Link>
-              <Nav.Link href='#team'>LineUp</Nav.Link>
-              <Nav.Link href='#roadmap'>Roadmap</Nav.Link>
-              <Nav.Link href='#royalty'>Royalties</Nav.Link>
+              <Nav.Link href='#team'>Team</Nav.Link>
+            
             </Nav>
             <Button variant='primary' id='connectButton' onClick={connectMetaMask}>{!account? 'Connect Wallet' : account.slice(0, 7) + '...' + account.slice(account.length - 4)}</Button>
           </Navbar.Collapse>
