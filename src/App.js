@@ -399,7 +399,7 @@ const App = () => {
           </Row>
         </Container>
       </Slide>
-
+{/*
       {/* Section 5 */}
       <Slide className='fifth__section' id='roadmap'>
         <Container>
@@ -463,5 +463,6 @@ const App = () => {
     </FullPage>
   )
 }
+*/}
 
 export default App
