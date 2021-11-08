@@ -92,7 +92,7 @@ const App = () => {
     const chainId = await window.web3.eth.getChainId();
     setChainId(chainId);
     {
-      chainId === 1 ? setMethod("success") : setMethod("error");
+      chainId === 25 ? setMethod("success") : setMethod("error");
     }
     // method && fireToast()
 
@@ -330,7 +330,7 @@ const App = () => {
             <div className='col-md-6 content'>
               <h2>About the SupBirds</h2>
               <p className='content' id="supbirds">
-              SupBirds are 5000 unique bird characters which live on Ethereum Blockchain. 
+              SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
               Each Sup Bird comes with proof of ownership, represented by the ERC721 standard. 
               The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
               Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
