@@ -302,7 +302,11 @@ const App = () => {
                 <p>
                   {contractAddress}
                 </p>
-               
+
+                <p className='sub__heading'>
+                  Works only on<a href="https://cronos.crypto.org/docs/getting-started/metamask.html" target="_blank"> Cronos Network </a>
+                </p>
+
                 {/* <p className='sub__heading'>
                   {contractAddress.slice(0, 7) + '...' + contractAddress.slice(contractAddress.length - 4)}
                 </p> */}
