@@ -337,6 +337,8 @@ const App = () => {
         <div className='container'>
           <div className='row'>
             
+             <Col md={7}>
+               
               <h2>About the SupBirds</h2>
               <p className='content' id="supbirds">
               SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
@@ -346,6 +348,7 @@ const App = () => {
               </p>
               <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
           
+              </Col>
 
             <div className='col-md-5 content'>
      
