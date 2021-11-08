@@ -285,7 +285,7 @@ const App = () => {
   return (
     <FullPage controls={false}>
       <Header />
-
+       <br><br><br>
       {/* Section 1 */}
       <Slide className='top__section' id='home'>
         <div className='container'>
