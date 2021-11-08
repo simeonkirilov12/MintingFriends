@@ -92,7 +92,7 @@ const App = () => {
     const chainId = await window.web3.eth.getChainId();
     setChainId(chainId);
     {
-      chainId === 4 ? setMethod("success") : setMethod("error");
+      chainId === 1 ? setMethod("success") : setMethod("error");
     }
     // method && fireToast()
 
