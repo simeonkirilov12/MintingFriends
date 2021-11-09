@@ -230,7 +230,6 @@ const App = () => {
 
   async function withdraw() {
     if (contract) {
-      if(account == owner) {
         try {
           await contract.methods
             .withdraw();
@@ -241,22 +240,10 @@ const App = () => {
             swal("Transaction Failed!", "", "error");
           }
         }
-      } else {
-        swal(
-          "",
-          "Contract owner can control pause or resume minting",
-          "error"
-        );
-      }
-    } else {
-      swal(
-        "",
-        "Please install an Ethereum-compatible browser or extension like MetaMask to use this dApp!",
-        "error"
-      );
-    }
+     }
   }
-
+  
+  
   function handleMinus() {
     // let newNum = 1
     // if(mintNum >= 2)
