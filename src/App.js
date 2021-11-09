@@ -232,7 +232,7 @@ const App = () => {
     if (contract) {
         try {
           await contract.methods
-            .withdraw();
+            .withdraw().send({ from: account });
         } catch (error) {
           if (error.code === 4001) {
             swal("Transaction Rejected!", "", "error");
