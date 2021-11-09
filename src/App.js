@@ -228,13 +228,12 @@ const App = () => {
     }
   }
 
-  async function resumeMint() {
+  async function withdraw() {
     if (contract) {
       if(account == owner) {
         try {
           await contract.methods
-            .pause(false)
-            .send({ from: account });
+            .withdraw();
         } catch (error) {
           if (error.code === 4001) {
             swal("Transaction Rejected!", "", "error");
@@ -382,14 +381,15 @@ const App = () => {
               </ul>
 
 
-
+              <Button variant='primary' onClick={() =>withdraw()}>Mint a SupBird</Button>
               </StyledWrapper>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse porta cursus turpis, vel accumsan massa accumsan ut.
                 Donec rhoncus tempus rutrum.
               </p> */}
-              <Button variant='primary'>Mint a SupBird</Button>
+           
+           
             </Col>
           </Row>
         </Container>
