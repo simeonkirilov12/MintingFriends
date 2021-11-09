@@ -367,8 +367,10 @@ const App = () => {
                 <li>🍗 Body 11</li>
               </ul>
 
+              <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
+              {/* <Button variant='primary' onClick={() =>withdraw()}>Mint a SupBird</Button> */}
 
-              <Button variant='primary' onClick={() =>withdraw()}>Mint a SupBird</Button>
+
               </StyledWrapper>
               {/* <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -406,7 +408,8 @@ const App = () => {
         </Container>
       </Slide>
 
-
+<Footer>
+                </Footer>
     </FullPage>
   )
 }
