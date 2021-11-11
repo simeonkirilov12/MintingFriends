@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={12} className='text-center'>
-            <a href='https://discord.gg/fyy2Ddqd'>
+            <a href='https://discord.gg/akCERrFYD3'>
               <FaDiscord color='white' size={24} />
             </a>{' '}
             &nbsp;&nbsp;&nbsp;
