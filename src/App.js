@@ -393,7 +393,7 @@ const App = () => {
             </Col>
             <Col md={3}>
               <Image src={line1} fluid className='mb-5' />
-              <h3>Simeon Kirilov</h3>
+              <h3>Mark Kirilov</h3>
             </Col>
             <Col md={3}>
               <Image src={line2} fluid className='mb-5' />
