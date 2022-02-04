@@ -9,11 +9,11 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={12} className='text-center'>
-            <a href='https://discord.gg/akCERrFYD3'>
+            <a href='https://discord.com/invite/AjuRBbjtBS'>
               <FaDiscord color='white' size={24} />
             </a>{' '}
             &nbsp;&nbsp;&nbsp;
-            <a href='https://mobile.twitter.com/myluckyapes'>
+            <a href='https://mobile.twitter.com/wildapeznft'>
               <FaTwitter color='white' size={24} />
             </a>
           </Col>
