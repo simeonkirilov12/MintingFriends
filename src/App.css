@@ -11,6 +11,11 @@ box-shadow: 0 !important;
   margin-top: 150px;
 }
 
+.top__section {
+ height: 95%;
+    padding: 100px 0 0 0;
+}
+
 h1, h2, h3, h4{
   font-family: 'Encode Sans Expanded',sans-serif;
   color: white;
@@ -21,6 +26,10 @@ p{
   color: white;
 }
 
+#home {
+    height: 95%;
+    padding: 100px 0 0 0;
+}
 
 .second__section .container,
 .third__section .container,
