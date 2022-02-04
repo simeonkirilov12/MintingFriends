@@ -11,6 +11,12 @@ box-shadow: 0 !important;
   margin-top: 150px;
 }
 
+.card {
+box-shadow: none !imporant;
+}
+
+
+
 .top__section {
  height: 93% !important;
     padding: 50px 0 0 0;
