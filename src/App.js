@@ -6,8 +6,8 @@ import ReactPlayer from 'react-player'
 import { ToastContainer, toast } from "react-toastify";
 import swal from "sweetalert";
 import { contractAbi, contractAddress } from './config'
-//import tokenSlider from './components/tokenSlider'
-//import styled from 'styled-components'
+import tokenSlider from './components/tokenSlider'
+import styled from 'styled-components'
 
 import { Image, Button, Container, Row, Col, Card, Text } from 'react-bootstrap'
 
