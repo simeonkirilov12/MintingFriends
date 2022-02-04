@@ -12,12 +12,12 @@ box-shadow: 0 !important;
 }
 
 .top__section {
- height: 95% !important;
-    padding: 100px 0 0 0;
+ height: 93% !important;
+    padding: 150px 0 0 0;
 }
 #home {
- height: 95% !important;
-    padding: 100px 0 0 0;
+ height: 93% !important;
+    padding: 150px 0 0 0;
 }
 
 h1, h2, h3, h4{
@@ -31,8 +31,8 @@ p{
 }
 
 #home {
-    height: 95%;
-    padding: 100px 0 0 0;
+    height: 93%;
+    padding: 150px 0 0 0;
 }
 
 .second__section .container,
