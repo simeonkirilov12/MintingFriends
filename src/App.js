@@ -285,9 +285,7 @@ const App = () => {
                 <h1>{totalSupply}/{maxSupply}</h1>
 
 
-                <p className='sub__heading'>
-                  {contractAddress}
-                </p>
+                
 
               
 
@@ -307,9 +305,9 @@ const App = () => {
                   <span class="plus bg-dark" onClick={()=>handlePlus()}>+</span>
                 </div>
                 <StyledPadding />
-                {/* {account? <Button variant='primary' onClick={() =>mint(mintNum)}>Get Lucky Ape</Button> : 
-                <Button variant='primary' id='connectButton' onClick={connectMetaMask}>Connect Wallet</Button>} */}
-                <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
+                 {account? <Button variant='primary' onClick={() =>mint(mintNum)}>Get Lucky Ape</Button> : 
+                <Button variant='primary' id='connectButton' onClick={connectMetaMask}>Connect Wallet</Button>} 
+               {/*<Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button> */}
               </StyledCard>
             {/* </div> */}
           {/* </div> */}
@@ -318,6 +316,9 @@ const App = () => {
   
 
 <Footer>
+          <p className="contract">
+                  {contractAddress}
+                </p>
 </Footer>
     </FullPage>
   )
