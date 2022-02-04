@@ -13,7 +13,7 @@ const Footer = () => {
               <FaDiscord color='white' size={24} />
             </a>{' '}
             &nbsp;&nbsp;&nbsp;
-            <a href='https://mobile.twitter.com/supbirdsnft'>
+            <a href='https://mobile.twitter.com/myluckyapes'>
               <FaTwitter color='white' size={24} />
             </a>
           </Col>
