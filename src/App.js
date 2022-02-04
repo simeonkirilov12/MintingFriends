@@ -62,7 +62,7 @@ const App = () => {
   const [balance, setBalance] = useState(0);
   const [tokens, setTokens] = useState([]);
   let [mintNum, setMintNum] = useState(1);
-  const api = "https://wwww.supbirds.com/meta/";
+ // const api = "https://wwww.supbirds.com/meta/";
 
   useEffect(async () => {
     loadWeb3();
@@ -278,7 +278,7 @@ const App = () => {
           {/* <div className='row text-center'> */}
             {/* <div className='col-md-9 m-auto'> */}
               {/* <h1>
-                 SupBirds NFT
+                 My Lucky Apes
               </h1> */}
         
               <StyledCard className='mintCard'>
@@ -289,19 +289,17 @@ const App = () => {
                   {contractAddress}
                 </p>
 
-                <p className='sub__heading'>
-                  Works only on<a href="https://cronos.crypto.org/docs/getting-started/metamask.html" target="_blank"> Cronos Network </a>
-                </p>
+              
 
                 {/* <p className='sub__heading'>
                   {contractAddress.slice(0, 7) + '...' + contractAddress.slice(contractAddress.length - 4)}
                 </p> */}
 
                 <p className='sub__heading'>
-                  1 SupBird costs 100 CRO
+                  1 Lucky Ape costs 0.08 ETH
                 </p>
                 <p className='sub__heading'>
-                  Mint your SupBird
+                  Get a Lucky Ape
                 </p>
                 <div class="qty mt-1">
                   <span class="minus bg-dark" onClick={() => handleMinus()}>-</span>
@@ -309,7 +307,7 @@ const App = () => {
                   <span class="plus bg-dark" onClick={()=>handlePlus()}>+</span>
                 </div>
                 <StyledPadding />
-                {/* {account? <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a RIZK</Button> : 
+                {/* {account? <Button variant='primary' onClick={() =>mint(mintNum)}>Get Lucky Ape</Button> : 
                 <Button variant='primary' id='connectButton' onClick={connectMetaMask}>Connect Wallet</Button>} */}
                 <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
               </StyledCard>
@@ -317,99 +315,10 @@ const App = () => {
           {/* </div> */}
         </div>
       </Slide>
-
-      {/* Section 2 */}
-      <Slide className='second__section' id='rizk'>
-        
-        
-        
-        
-        <Container>
-          <Row>
-            <Col md={12}>
-              <h2>About SupBirds</h2>
-                <div className='mt-5'>
-                  <StyledWrapper>
-                      <p className='content' id="supbirds">
-                      SupBirds are 5000 unique bird characters that live on Ethereum Blockchain and Cronos Crypto.Com Blockchain . 
-                      Each Sup Bird comes with proof of ownership, represented by the ERC721 standard and it is the <a href="https://cronos.crypto.org/explorer/tokens/0x48879b93AbCE2B69F9792584f8891BCe30C1BF28/token-transfers">First NFT Collection on Cronos Network</a> implemented on Block 5169 from cronos.Crypto.org
-                      The main mission of SupBirds NFT project is to create the best NFT community by connecting designers, blockchain developers and investors under one roof and. 
-                      Each NFT Owner will have exclusive roles in the community as well as rights to vote for future development. 
-                      </p>
-                  
-                  </StyledWrapper>
-                </div>
-               <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
-            </Col>
-          </Row>
-        </Container>
   
-      </Slide>
-
-      {/* Section 3 */}
-      <Slide className='third__section' id='distribution'>
-        <Container>
-          <Row>
-            <Col md={5}>
-              <Image src={thirdImage} fluid />
-            </Col>
-            <Col md={7}>
-              <h2>Rarity</h2>
-              <StyledWrapper>
-              
-              
-              <ul>
-                <li>🐔 Headwear 15</li>
-                <li>👀 Eyes 12</li>
-                <li>🖥 Background 10</li>
-                <li>👄 Mouth 11 </li>
-                <li>👕 Clothes 12 </li>
-                <li>🍗 Body 11</li>
-              </ul>
-
-              <Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button>
-               {/*  <Button variant='primary' onClick={() =>withdraw()}>Mint a SupBird</Button>   */}
-
-
-              </StyledWrapper>
-              {/* <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse porta cursus turpis, vel accumsan massa accumsan ut.
-                Donec rhoncus tempus rutrum.
-              </p> */}
-           
-           
-            </Col>
-          </Row>
-        </Container>
-      </Slide>
-
-      {/* Section 4 */}
-      <Slide className='forth__section' id='team'>
-        <Container>
-          <Row className='text-center'>
-            <Col md={12} className='mb-5'>
-              <h2>Team</h2>
-            </Col>
-            <Col md={3}>
-              <Image src={line1} fluid className='mb-5' />
-              <h3>Mark Kirilov</h3>
-            </Col>
-            <Col md={3}>
-              <Image src={line2} fluid className='mb-5' />
-              <h3>MadMax</h3>
-            </Col>
-            <Col md={3}>
-              <Image src={line3} fluid className='mb-5' />
-              <h3>Basi</h3>
-            </Col>
-            
-          </Row>
-        </Container>
-      </Slide>
 
 <Footer>
-                </Footer>
+</Footer>
     </FullPage>
   )
 }
