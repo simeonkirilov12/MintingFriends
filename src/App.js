@@ -287,7 +287,7 @@ const App = () => {
                   1 Lucky Ape costs 0.08 ETH
                 </p>
                 <p className='sub__heading'>
-                  Get a Lucky Ape
+                  Mint your Wild Ape
                 </p>
                 <div class="qty mt-1">
                   <span class="minus bg-dark" onClick={() => handleMinus()}>-</span>
@@ -295,7 +295,7 @@ const App = () => {
                   <span class="plus bg-dark" onClick={()=>handlePlus()}>+</span>
                 </div>
                 <StyledPadding />
-                 {account? <Button variant='primary' onClick={() =>mint(mintNum)}>Get Lucky Ape</Button> : 
+                 {account? <Button variant='primary' onClick={() =>mint(mintNum)}>Get Wild Ape</Button> : 
                 <Button variant='primary' id='connectButton' onClick={connectMetaMask}>Connect Wallet</Button>} 
                {/*<Button variant='primary' onClick={() =>mint(mintNum)}>Mint a SupBird</Button> */}
               </StyledCard>
