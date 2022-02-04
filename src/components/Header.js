@@ -145,7 +145,7 @@ const Header = () => {
     <header>
       <Navbar fixed='top' expand='lg'>
         <Container>
-          <Navbar.Brand href='#home'> My Lucky Apes</Navbar.Brand>
+          <Navbar.Brand href='#home'> Wild Apez</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='m-auto'>
