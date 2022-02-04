@@ -139,18 +139,14 @@ header .btn-primary:hover {
   color: black;
 }
 
-
-
-.top__section .qty .count {
-  color: #000;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-  padding: 0 2px
-  ;min-width: 35px;
-  text-align: center;
+ .top__section .qty .count {
+    color: #000;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 20px;
+    min-width: 105px;
+    margin: 0 20px;
 }
 .top__section .qty .plus {
   cursor: pointer;
