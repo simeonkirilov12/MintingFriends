@@ -60,12 +60,12 @@ p{
 
 header .btn-primary {
   padding: 12px 30px;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 16px;
   font-weight: 700;
-  background-color: #FF1493;
-  color: black;
-  border-color: #FF1493;
+  background: rgb(2,0,36);
+background: linear-gradient(166deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 8%, rgba(0,212,255,1) 100%);
+  color: white;
   font-family: 'Encode Sans Expanded',sans-serif;
 }
 
@@ -100,7 +100,10 @@ header .btn-primary:hover {
  }
 /* Top Section */
 .top__section{
-  background: url('./assets/big__image.jpg');
+ /* background: url('./assets/big__image.jpg'); */
+  
+  background: rgb(2,0,36);
+background: linear-gradient(166deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 8%, rgba(0,212,255,1) 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -144,7 +147,7 @@ header .btn-primary:hover {
     font-size: 17px;
     font-weight: 700;
     line-height: 30px;
-    padding: 0 0 0 40px;
+    padding: 0 0 0 45px;
     min-width: 105px;
     margin: 0 20px;
 }
