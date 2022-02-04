@@ -12,7 +12,11 @@ box-shadow: 0 !important;
 }
 
 .top__section {
- height: 95%;
+ height: 95% !important;
+    padding: 100px 0 0 0;
+}
+#home {
+ height: 95% !important;
     padding: 100px 0 0 0;
 }
 
