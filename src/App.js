@@ -284,7 +284,7 @@ const App = () => {
                 </p> */}
 
                 <p className='sub__heading'>
-                  1 Lucky Ape costs 0.08 ETH
+                  1 Wild Ape costs 0.08 ETH
                 </p>
                 <p className='sub__heading'>
                   Mint your Wild Ape
