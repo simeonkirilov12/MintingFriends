@@ -6,24 +6,14 @@ import ReactPlayer from 'react-player'
 import { ToastContainer, toast } from "react-toastify";
 import swal from "sweetalert";
 import { contractAbi, contractAddress } from './config'
-import tokenSlider from './components/tokenSlider'
-import styled from 'styled-components'
+//import tokenSlider from './components/tokenSlider'
+//import styled from 'styled-components'
 
 import { Image, Button, Container, Row, Col, Card, Text } from 'react-bootstrap'
-import thirdImage from './assets/third-section.jpeg'
-import sectionVideo from './assets/Output.gif'
-import line1 from './assets/line1.png'
-import line2 from './assets/line2.png'
-import line3 from './assets/line3.png'
-import line4 from './assets/line4.png'
-import line5 from './assets/line5.png'
-import line6 from './assets/line6.png'
-import line7 from './assets/line7.png'
-import line8 from './assets/line8.png'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Roadmap from './components/roadmap'
+
 
 // Custom Style
 import './App.css'
