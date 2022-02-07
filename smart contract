@@ -1240,7 +1240,10 @@ contract WildApeZ is ERC721Enumerable, Ownable {
   uint256 public maxSupply = 8888;
   uint256 public maxMintAmount = 50;
   bool public paused = false;
-  address AMS = 0x207c956981F51aecd01b6A17B70b1B878A8cc915 ;
+ 
+  address AMSaddr = 0x207c956981F51aecd01b6A17B70b1B878A8cc915;
+  address payable wallet = payable(AMSaddr);
+
   mapping(address => bool) public whitelisted;
 
   constructor(
