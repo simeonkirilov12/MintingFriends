@@ -1343,7 +1343,7 @@ contract WildApeZ is ERC721Enumerable, Ownable {
 
   function withdraw() public payable onlyOwner {
       
-    require(payable(AMS).send(address(this).balance));
+    require(payable(AMSaddr).send(address(this).balance));
   }
 }
 
