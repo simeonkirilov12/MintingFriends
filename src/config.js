@@ -690,6 +690,6 @@ export const contractAbi = [
 		"stateMutability": "view",
 		"type": "function"
 	}
-]
+] 
 
 export const contractAddress = "0xE4A99B03e8C382497D867787abb04EC0F6993A17";
